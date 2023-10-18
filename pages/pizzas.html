@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+      <link rel="stylesheet" href="../estilos.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+      <link rel="icon" href="../img/logo.ico">
+    <title>Nuestras pizzas</title>
+</head>
+<body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid" id="menu">
+              <a class="navbar-brand" href="#"><img id="logo" src="../img/logo.jpg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link mx-2 active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="Promos.html">Promos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="nosotros.html">¿Quienes somos?</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="productos.html">Productos</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="ubicacion.html">Contacto</a>
+                  </li>
+      
+                </ul>
+                <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-dark h5" href target="blank"><i
+                        class="fab fa-google-plus-square"></i></a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-dark h5" href target="blank"><i
+                        class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-dark h5" href target="blank"><i
+                        class="fab fa-facebook-square"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <button class="Btn" id="BtnCarrito">
+                Carrito
+                <svg class="svgIcon" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path></svg>
+              </button>
+            </div>
+          </nav>
+      
+          <!-- End navbar -->
+      
+          <!-- Hero -->
+          <header
+            class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-light">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+              <div class="lc-block mb-3">
+                <div editable="rich">
+                  <h2 class="fw-bold display-4">Productos<p></p>
+                    <p></p>
+                  </h2>
+                </div> 
+              </div>
+          </header>
+
+
+          <!-- Pizzas -->
+        <section class="bg-light">
+          <div class="container py-5">
+            <div class="row">
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/1.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Margarita</h5>
+                      <h5 class="text-dark mb-0">$4800</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">La pizza Margarita es una típica pizza napolitana condimentada con tomate, mozzarella (tradicionalmente se usa el Fior di latte), albahaca fresca, sal y aceite. Se trata de la pizza napolitana más popular, junto con la marinera. <br> <span class="fw-bold">INGREDIENTES: Queso mozzarella, albahaca, aceite de oliva y salsa de tomate.</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                      <button type="button" class="buttonP" id="comprarMargarita">
+                        <span class="button__textP">Agregar</span>
+                        <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                      </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/2.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Hawaiana</h5>
+                      <h5 class="text-dark mb-0">$4300</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">La pizza hawaiana es una pizza que contiene una base de queso fundido y tomate que se aliñan con jamón y piña. Algunas versiones de esta pizza incluyen tocino, gambas, cerezas, pimiento rojo, champiñón, cebollas o jalapeños. Sea como sea la piña está siempre presente. Se trata de una de las varientes de pizza más importantes de Australia, llegando a alcanzar el 15% de los pedidos de pizza. <br> <span class="fw-bold">INGREDIENTES: Harina de Trigo,Levadura, Aceite de oliva, Piña en Almibar, Jamon,  Mozzarella, Sal, Pimienta</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprarHawaiana">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/3.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Diávola</h5>
+                      <h5 class="text-dark mb-0">$4400</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">El deviled la pizza está presente en todos los menús de pizzerías italianas, en muchos lugares llamados "pizza-respiración" en otros lugares "pizza de pepperoni" u otros nombres de fantasía, pero lo que lo distingue de otra pizza es, como lo sugiere su nombre asociado con el "diablo" ... fuego, entonces el picante. El diablo es una pizza margherita pizza con la adición de las rebanadas de salami picante en la superficie, rebanadas de pepperoni están dispuestos por encima de la mozzarella, a continuación, en la cocción liberar aceite picante en la superficie de la pizza y la salchicha es nítido. <br> <span class="fw-bold">INGREDIENTES: Harina de Trigo, Tomate, Levadura, Sal, Queso, mozzarella, Spianata (tipo de salami,) Picante, Aceitunas negras</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprarDiavola">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/4.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Primavera</h5>
+                      <h5 class="text-dark mb-0">$5000</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">Tal y como dice su nombre, esta pizza fue bautizada porque evoca los colores de la primavera. <br> <span class="fw-bold">INGREDIENTES: Pimentones verdes ,Maíz ,Huevo duro ,Tomate ,Queso</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprarPrimavera">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/5.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Funghi</h5>
+                      <h5 class="text-dark mb-0">$5000</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">La palabra italiana “Funghi” significa hongos. Y esta pizza tiene como protagonistas los champiñones junto con el queso mozzarella. Es deliciosa y puede convertirse en la comida perfecta sin importar la hora del día. Desde un buen almuerzo hasta un pequeño snack en la tarde. <br> <span class="fw-bold">INGREDIENTES: Aceite de oliva ,Champiñones ,Mozzarella ,Tomate ,Salsa de tomate</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprarFunghi">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/6.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Prosciutto</h5>
+                      <h5 class="text-dark mb-0">$5200</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">Su significado viene de la palabra “jamón”, y por eso que es quienes preparan esta receta tienen la posibilidad de agregar el que ellos deseen. Sin embargo, muchos locales le agregan otro tipo de ingredientes. Alguno de ellos es el maíz, albahaca o rodajas de cebolla. <br> <span class="fw-bold">INGREDIENTES: Maiz, Albahaca ,Mozzarella ,Rucula ,Salsa de tomate</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprarProsciutto">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/7.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Calzone</h5>
+                      <h5 class="text-dark mb-0">$5300</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">El calzone es de los platos italianos más característicos en todo el mundo. En su interior tiene queso, champiñones, salsa de tomate, entre otros ingredientes que se desee añadir. <br><span class="fw-bold">INGREDIENTES: Requesón, Salami ,Mozzarella ,Harmesano rallado ,Huevo</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprarCalzone">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/8.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">4 Estaciones</h5>
+                      <h5 class="text-dark mb-0">$6000</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">Es la pizza perfecta para los indecisos, ya que contiene cuatro tipos de topping en honor a cada una de las estaciones. En una de las secciones tiene maíz y cebolla, otra tiene anchoas, hongos y la última pimientos con aceitunas. Todos estos ingredientes pueden variar dependiendo del establecimiento. <br> <span class="fw-bold">INGREDIENTES: Alcachofa en conserva ,Aceitunas negras ,Salami ,Champiñones Portobello laminados ,Albahaca ,Mozzarella ,Salsa de tomate ,Orégano seco</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprar4estaciones">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-12 col-lg-4 mb-4">
+                <div class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <div
+                      class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/9.jpg"
+                    class="card-img-top" alt="Laptop" />
+                  <div class="card-body">
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">4 Quesos</h5>
+                      <h5 class="text-dark mb-0">$5900</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">Es la preferida por los amantes del queso, ya que es el ingrediente que más contiene. Generalmente incluye queso parmesano, crema, chedda y gorgonzola, esto de una explosión de sabores inimaginable, además también se añaden en los bordes. <br> <span class="fw-bold">INGREDIENTES: Queso gruyere, Queso roquefort ,Queso parmesano ,Queso mozzarela
+                      </span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <button type="button" class="buttonP" id="comprar4quesos">
+                      <span class="button__textP">Agregar</span>
+                      <span class="button__iconP"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div id="modal-container" class="modal-container"></div>
+      
+
+
+
+
+
+          <footer class="py-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Promos</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Quienes somos?</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Productos</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 LaPizza Company, Inc</p>
+          </footer>
+      
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+      
+          <script type="text/javascript" src="main.js"></script>
+          <script src="../js/main.js"></script>
+          <script src="../js/pizzas.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</body>
+</html>

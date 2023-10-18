@@ -1,0 +1,560 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+}
+#menu{
+    background-image: url('../ProyectoFinalRomeo/img/fondoDiv.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+    background-repeat: no-repeat;
+}
+
+
+a:hover {
+    background-color: rgb(156, 39, 39);
+  }
+
+#imgNav{
+    padding-bottom: 90px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 200px;
+  }
+.acciones {
+    width: 100%; /* Ocupa el ancho completo de la pantalla */
+    display: flex; /* Flexbox para alinear las imágenes en fila */
+    justify-content: space-between; 
+    align-items: center; 
+    overflow-x: auto;
+  }
+
+.acciones img{
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que el contenedor */
+    height: auto;
+}
+
+.card-group{
+    padding: 100px;
+}
+
+.cadetes img{
+    height: 350px;
+}
+
+.promoss{
+    max-width: 100%;
+    height: auto;
+  
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.promoss img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos de boton promos */
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+  }
+  
+  .comic-button:hover {
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+  }
+  
+  .comic-button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+/* Estilos seccion promos */
+  .mainPromos{
+    padding: 300px;
+
+  }
+  .mainPromos .card-body{
+    background-color: #ff5252;
+  }
+ .mainPromos .card-text{
+    color: #fff;
+ }
+.mainPromos .card-title{
+    color: #fff;
+}
+  
+.mainPromos h6{
+    color: #fff;
+}
+
+.infoHis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  padding: 200px;
+  flex-direction: column;
+}
+
+.infoHis p{
+  text-align: center; 
+  max-width: 800px; 
+  padding: 20px; /
+}
+
+#imgHis{
+  width: 550px;
+  height: 300px;
+}
+
+
+
+/* Estilos seccion productos */
+
+
+.mainProductos{
+  display: flex;
+  flex-direction: column;
+  padding: 200px;
+}
+
+
+
+.layoutPizzas{
+  max-width: 100%;
+  height: auto;
+
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.layoutPizzas .imgPizzas{
+  width: 620px;
+  height: 390px;
+  transition: transform 0.3s;
+}
+
+.imgPizzas:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Botones de pizzas */
+.buttonP {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+.buttonP, .button__iconP, .button__textP {
+  transition: all 0.3s;
+}
+
+.buttonP .button__textP {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.buttonP .button__iconP {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonP .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.buttonP:hover {
+  background: #34974d;
+}
+
+.buttonP:hover .button__text {
+  color: transparent;
+}
+
+.buttonP:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.buttonP:active .button__icon {
+  background-color: #2e8644;
+}
+
+.buttonP:active {
+  border: 1px solid #2e8644;
+}
+
+
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+
+/* Boton ver carrito */
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+
+
+/* Modal container */
+/*
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0909;
+  color: #fff;
+  width: 100%;
+}
+
+
+
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+*/
+
+/* Estilos seccion productos/pizzas */
+.modal-container{
+  width: 80%;
+  margin: 0 10%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: auto;
+  justify-content: space-around;
+}
+.modal-container h3{
+  background-color: #000000;
+  color: #fff;
+}
+
+.total-content {
+  color: #fff;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: black;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0909;
+  color: #fff;
+  width: 100%;
+}
+
+
+
+.modal-header-button {
+  cursor: pointer;
+}
+.delete-product{
+  cursor: pointer;
+}
+
+
+
+/* Boton eliminar pizza*/
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+
+.button::before {
+  position: absolute;
+  top: -20px;
+  content: "Delete";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+
+
+/* Boton Total*/
+
+.btnTotal{
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+ }
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     hsl(340deg 100% 16%) 0%,
+     hsl(340deg 100% 32%) 8%,
+     hsl(340deg 100% 32%) 92%,
+     hsl(340deg 100% 16%) 100%
+   );
+ }
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .btnTotal:hover {
+  filter: brightness(110%);
+ }
+ 
+ .btnTotal:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .btnTotal:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+ }
+ 
+ .btnTotal:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .btnTotal:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+ }
+ 
+ .btnTotal:focus:not(:focus-visible) {
+  outline: none;
+ }
+
+
+
+
+
+.mainCocineros{
+  padding-bottom: 800px;
+}
+ .imgCoc{
+  width: 800px;
+  height: 500px;
+  
+ }
+
+ .cocinerosss{
+    width: 1366px;
+    height: 768px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+
+ }
+ .divCocinero{
+ padding: 100px;
+ }
+ .divCocinero p{
+  padding: 20px;
+ }
+
+ .cocinero h3{
+  align-items: center;
+ }
